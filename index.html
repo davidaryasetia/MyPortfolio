@@ -1,371 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hi!! My Name is David Aryasetia Febrian Susanto I'm a College Student & Web Developer"
-    />
-    <meta
-      name="keywords"
-      content="david, david aryasetia, david aryasetia febrian, david aryasetia febrian susanto"
-    />
-    <meta name="author" content="david aryasetia febrian susanto" />
-    <link rel="stylesheet" href="/dist/css/final.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <title>DavidAryasetia</title>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ZYVEBGE6PE"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-ZYVEBGE6PE");
 
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
-  </head>
-  <body>
-    <!-- Header Start -->
-    <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
-    >
-      <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary"
-              >Dav's Corp</a
-            >
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="absolute right-4 block lg:hidden"
-            >
-              <span
-                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
-              ></span>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Hi!! My Name is David Aryasetia Febrian Susanto I'm a Backend Developer & Database Administration" />
+  <meta name="keywords" content="david, david aryasetia, david aryasetia febrian, david aryasetia febrian susanto" />
+  <meta name="author" content="david aryasetia febrian susanto" />
+  <link rel="stylesheet" href="/dist/css/final.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-            <nav
-              id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Dashboard</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >About Me</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#portfolio"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#clients"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Skill</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#blog"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Blog</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Contact</a
-                  >
-                </li>
-                <li class="mt-3 flex items-center pl-8 lg:mt-0">
-                  <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">light</span>
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
-                      <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-                      >
-                        <div
-                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
-                        ></div>
+  <title>David Aryasetia</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYVEBGE6PE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-ZYVEBGE6PE");
+
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <div class="container">
+      <div class="relative flex items-center justify-between">
+        <div class="px-4">
+          <a href="#home" class="block py-6 text-lg font-bold text-primary">Dav's Corp</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+            <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
+
+          <nav id="nav-menu"
+            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Dashboard</a>
+              </li>
+              <li class="group">
+                <a href="#about"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About Me</a>
+              </li>
+              <li class="group">
+                <a href="#portfolio"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+              </li>
+              <li class="group">
+                <a href="#clients"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Skill</a>
+              </li>
+              <li class="group">
+                <a href="#blog"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+              </li>
+              <li class="group">
+                <a href="#contact"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+              </li>
+              <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                <div class="flex">
+                  <span class="mr-2 text-sm text-slate-500">light</span>
+                  <input type="checkbox" class="hidden" id="dark-toggle" />
+                  <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
                       </div>
-                    </label>
-                    <span class="ml-2 text-sm text-slate-500">dark</span>
-                  </div>
-                </li>
-              </ul>
-            </nav>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500">dark</span>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Hero Section Start -->
+  <section id="home" class="pt-36 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary md:text-xl">
+            Hi All 🖐, My Name
+            <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">
+              David Aryasetia
+            </span>
+          </h1>
+          <h2 class="mb-4 text-lg font-medium text-secondary lg:text-2xl">
+            Backend Developer &
+            <span class="text-dark dark:text-white">
+              Database Administrator
+            </span>
+          </h2>
+          <p class="mb-10 font-medium leading-relaxed text-secondary">
+            <span>Passionate About Backend Development | Database Administration and Database Engineer |<br></span>
+            <span> SQL Developer | Interest About Microservices Architecture | Cloud Server Administration</span>
+          </p>
+
+          <a href="https://wa.me/082232668794"
+            class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-teal-400 hover:opacity-80 hover:shadow-lg">Contact
+            Me</a>
+        </div>
+
+        <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="relative mt-10 lg:right-0 lg:mt-0">
+            <img src="dist/img/David.png" alt="David" class="relative z-10 mx-auto max-w-full" />
           </div>
         </div>
       </div>
-    </header>
-    <!-- Header End -->
+    </div>
+  </section>
+  <!-- Hero Section End -->
 
-    <!-- Hero Section Start -->
-    <section id="home" class="pt-36 dark:bg-dark">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">
-              Hi All 🖐, My Name
-              <span
-                class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
-              >
-                David Aryasetia
-              </span>
-            </h1>
-            <h2 class="mb-7 text-lg font-medium text-secondary lg:text-2xl">
-              Colege Student &
-              <span class="text-dark dark:text-white">
-                FrontEnd Web Developer
-              </span>
-            </h2>
-            <p class="mb-10 font-medium leading-relaxed text-secondary">
-              Learning web programming is easy
-              <span class="font-semibold text-dark dark:text-white">
-                right
-              </span>
+  <!-- About Section Start -->
+  <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+
+        <div class="mb-10 w-full px-4 lg:w-1/2">
+          <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+            <h4 class="mb-4 text-2xl font-extrabold text-primary flex items-center">
+              🚀 <span
+                class="ml-2 text-gradient bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">About
+                Me</span>
+            </h4>
+
+            <p class="text-gray-700 text-base leading-relaxed mb-4">
+              Hi, I’m <span class="font-semibold text-primary">David Aryasetia</span>, a <span
+                class="font-semibold text-primary">Backend Developer</span> and
+              <span class="font-semibold text-primary">Database Administrator</span> with hands-on experience in
+              designing and managing scalable backend systems.
+              I specialize in <span class="font-semibold text-primary">Laravel</span>, <span
+                class="font-semibold text-primary">RESTful APIs</span>, and database
+              management using <span class="font-semibold text-primary">MySQL</span>, <span
+                class="font-semibold text-primary">PostgreSQL</span>, and <span
+                class="font-semibold text-primary">Oracle</span>.
             </p>
 
-            <a
-              href="https://wa.me/082232668794"
-              class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-teal-400 hover:opacity-80 hover:shadow-lg"
-              >Contact Me</a
-            >
-          </div>
+            <p class="text-gray-800 font-semibold mb-2">My expertise includes:</p>
+            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+              <li class="hover:text-primary transition-colors duration-200">
+                <strong>Database Schema Design</strong>
+              </li>
+              <li class="hover:text-primary transition-colors duration-200">
+                <strong>PL/SQL Programming & Query Optimization</strong>
+              </li>
+              <li class="hover:text-primary transition-colors duration-200">
+                <strong>Cloud Infrastructure Deployment</strong> using <strong>Oracle Cloud</strong> and
+                <strong>Nginx</strong>
+              </li>
+            </ul>
 
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:right-0 lg:mt-0">
-              <img
-                src="dist/img/David.png"
-                alt="David"
-                class="relative z-10 mx-auto max-w-full"
-              />
+            <div class="mt-6">
+              <a href="#contact"
+                class="inline-block px-6 py-2 text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                Contact Me
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Hero Section End -->
 
-    <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-dark">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="mb-3 text-lg font-bold uppercase text-primary">
-              About Me
+        <div class="mb-10 w-full px-4 lg:w-1/2">
+          <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+            <h4 class="mb-4 text-2xl font-extrabold text-primary flex items-center">
+              📞  <span
+                class="ml-2 text-gradient bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Let's Connect</span>
             </h4>
-            <h2
-              class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl"
-            >
-              Come on, learn web programming on the David Aryasetia Channel
-            </h2>
-            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
-              Web programming refers to the writing, markup and coding involved
-              in Web development, which includes Web content, Web client and
-              server scripting and network security. The most common languages
-              used for Web programming are XML, HTML, JavaScript, Perl 5 and
-              PHP.
-            </p>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3
-              class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl"
-            >
-              Let's Be Friends
-            </h3>
             <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
-              Hello, I'm David Aryasetia. I am a college student in informatics
-              engineering. I am very motivated to be able to develop my talents
-              and abilities professionally.
+              I’m open to exciting opportunities in Backend Development, Database Administration, and Cloud
+              Infrastructure. Let’s collaborate and build something impactful together!
             </p>
             <div class="flex items-center">
               <!-- Youtube -->
-              <a
-                href="https://www.youtube.com/@davidaryasetia8745"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              >
-                <svg
-                  class="fill-current"
-                  width="20"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <a href="https://www.youtube.com/@davidaryasetia8745" target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
                   <path
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  />
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
               </a>
 
               <!-- Linkedin -->
-              <a
-                href="https://www.linkedin.com/in/david-aryasetia-febrian-susanto-ab5a22172/"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              >
-                <svg
-                  class="fill-current"
-                  width="20"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <a href="https://www.linkedin.com/in/david-aryasetia-febrian-susanto/" target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  />
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
 
               <!-- Instagram -->
-              <a
-                href="https://www.instagram.com/david_aryasetia/"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              >
-                <svg
-                  class="fill-current"
-                  width="20"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <a href="https://www.instagram.com/david_aryasetia/" target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
-                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                  />
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
                 </svg>
               </a>
 
               <!-- Twitter -->
-              <a
-                href="https://twitter.com/david_aryasetia"
-                target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              >
-                <svg
-                  class="fill-current"
-                  width="20"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <a href="https://twitter.com/david_aryasetia" target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Twitter</title>
                   <path
-                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  />
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                 </svg>
               </a>
             </div>
           </div>
+
         </div>
       </div>
-    </section>
-    <!-- About Section End -->
+    </div>
+  </section>
+  <!-- About Section End -->
 
-    <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
-              Latest Project
-            </h2>
-            <p class="text-medium font-medium text-secondary md:text-lg">
-              This is my active latest project
-            </p>
-          </div>
+  <!-- Portfolio Section Start -->
+  <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+            Latest Project
+          </h2>
+          <p class="text-medium font-medium text-secondary md:text-lg">
+            This is my active latest project
+          </p>
         </div>
+      </div>
 
-        <div
-          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
-        >
-        
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="https://vixmo.ai/" target="_blank"
-                >
+      <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="https://vixmo.ai/" target="_blank">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Portfolio/Portfolio1.JPG"
-                alt="Landing Page"
-                width="w-full"
-              />
+              <img src="dist/img/Portfolio/Portfolio1.JPG" alt="Landing Page" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
               <span class="hover:text-sky-700">VIXMO</span>
               | Status : Active
             </h3>
-            
+
             <p class="text-base font-medium text-secondary">
               vixmo is a company profile website containing products developed
               by the company, and the team
             </p>
           </a>
-          </div>
-       
-              
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="http://www.davidaryasetia.site/" target="_blank">
+        </div>
+
+
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="http://www.davidaryasetia.site/" target="_blank">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Portfolio/Portfolio2.JPG"
-                alt="Landing Page"
-                width="w-full"
-              />
+              <img src="dist/img/Portfolio/Portfolio2.JPG" alt="Landing Page" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
               David Aryasetia |
               Status : Active
             </h3>
@@ -373,584 +290,426 @@
               This is my company profile about Me !
             </p>
           </a>
-          </div>
-
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="" target="">
+        </div>
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="https://lombokeats.com" target="_blank">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Portfolio/Portfolio3.png"
-                alt="Landing Page"
-                width="w-full"
-                class=" h-64 w-full"
-              />
+              <img src="dist/img/Portfolio/lombokeats.PNG" alt="Landing Page" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+              Lombokeats - App |
+              Status : Active
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              This project focuses on the development of a mobile web application aimed at recognizing and promoting Lombok Island's unique gastronomic heritage. Utilizing a Deep Learning model with Siamese Neural Network architecture, users can easily capture images of traditional Lombok dishes through their smartphone or photo gallery. These images are sent to a server where they are identified using a pre-trained model. The application then provides detailed gastronomic information about the recognized dish, including historical and cultural insights.
+            </p>
+          </a>
+        </div>
+        
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="https://app.lombokeats.com" target="_blank">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/Portfolio/Gapulo-Backend.PNG" alt="Landing Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+              Gapulo - Backend |
+              Status : Active
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              This project focuses on the development of the Gastronomi Backend & Admin App, a robust backend system built with Laravel and powered by a PostgreeSQL database. 
+              It is designed to support the gastronomic food recognition platform on Lombok Island, offering seamless integration with the frontend via RESTful APIs. 
+              This system allows for efficient data communication between the mobile frontend and backend server, ensuring that users can explore Lombok's rich culinary heritage.
+            </p>
+          </a>
+        </div>
+
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="" target="">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/Portfolio/SIAPT.png" alt="Landing Page" width="w-full" class=" h-64 w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
               SIAPT |
               Status : Active - Private
             </h3>
             <p class="text-base font-medium text-secondary">
-              This project focuses on the analysis and design of a Management Information System for Higher Education Accreditation, specifically for the Performance Report Data (LKPT) of vocational institutions, utilizing the APT 3.0 Instrument. 
+              This project focuses on the analysis and design of a Management Information System for Higher Education
+              Accreditation, specifically for the Performance Report Data (LKPT) of vocational institutions, utilizing
+              the APT 3.0 Instrument.
             </p>
           </a>
-          </div>
+        </div>
 
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="https://app.lombokeats.com" target="_blank">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Portfolio/Gapulo-Backend.PNG"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            >
-              Gapulo - Backend |
-              Status : Active 
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              Project For the backend development of the Lombok Gastronomy website, Laravel, a PHP framework, is utilized due to its robust features and ease of use. 
-            </p>
-          </a>
-          </div>
 
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="https://lombokeats.com" target="_blank">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Portfolio/Gapulo-App.PNG"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            >
-              Gapulo - App |
-              Status : Active 
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              Maintain and continue the development of the Lombok Gastronomy application, which is designed to showcase and preserve the rich culinary heritage of Lombok Island. Built with Laravel for the backend and Flutter for the frontend, the platform provides a comprehensive database of foods, restaurants, cultural events, and reference villages.
-            </p>
-          </a>
-          </div>
-
-          
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="" target="_blank">
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="" target="_blank">
             <div class="overflow-hidden rounded-md shadow-md flex justify-center">
-              <img
-                src="dist/img/Portfolio/TeachFinder1.png"
-                alt="Landing Page"
-                width="w-full"
-                class="h-56 flex-row"
-              />
-              <img
-                src="dist/img/Portfolio/TeachFinder2.png"
-                alt="Landing Page"
-                width="w-full"
-                class="h-56 ml-2 flex-row"
-              />
-              <img
-                src="dist/img/Portfolio/TeachFinder3.png"
-                alt="Landing Page"
-                width="w-full"
-                class="h-56 ml-2 flex-row"
-              />
-              <img
-                src="dist/img/Portfolio/TeachFinder4.png"
-                alt="Landing Page"
-                width="w-full"
-                class="h-56 ml-2 flex-row"
-              />
-              
-              
+              <img src="dist/img/Portfolio/TeachFinder1.png" alt="Landing Page" width="w-full" class="h-56 flex-row" />
+              <img src="dist/img/Portfolio/TeachFinder2.png" alt="Landing Page" width="w-full"
+                class="h-56 ml-2 flex-row" />
+              <img src="dist/img/Portfolio/TeachFinder3.png" alt="Landing Page" width="w-full"
+                class="h-56 ml-2 flex-row" />
+              <img src="dist/img/Portfolio/TeachFinder4.png" alt="Landing Page" width="w-full"
+                class="h-56 ml-2 flex-row" />
             </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
               TeachFinder - App |
-              Status : Active 
+              Status : Active
             </h3>
             <p class="text-base font-medium text-secondary">
-            TeachFinder is a location-based online tutor search application designed to connect students with qualified tutors in their area. The platform leverages advanced geolocation technology to help users find the best tutors for various subjects, tailored to their specific needs and preferences. TeachFinder allows students to browse tutor profiles, check ratings and reviews, and schedule lessons with ease. 
+              TeachFinder is a location-based online tutor search application designed to connect students with
+              qualified tutors in their area. The platform leverages advanced geolocation technology to help users find
+              the best tutors for various subjects, tailored to their specific needs and preferences. TeachFinder allows
+              students to browse tutor profiles, check ratings and reviews, and schedule lessons with ease.
             </p>
           </a>
-          </div>
-       
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio Section End -->
-
-    <!-- Clients Section Start -->
-    <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-400">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Skill</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl"
-            >
-              Ability Possesed
-            </h2>
-            <p class="text-medium font-medium text-secondary md:text-lg">
-              Strong concepts, including an understanding of HTML, CSS ,
-              JavaScript, and other framework like reactJS, laravel, tailwindCSS
-            </p>
-          </div>
         </div>
 
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/html-1.svg" alt="HTML" />
-              <p class="font-semibold1 mt-5 text-center text-white">HTML</p>
-            </a>
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/css-3.svg" alt="HTML" />
-              <p class="font-semibold1 mt-5 text-center text-white">CSS</p>
-            </a>
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/javascript-1.svg" alt="HTML" />
-              <p class="font-semibold1 mt-5 text-center text-white">
-                JavaScript
-              </p>
-            </a>
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/laravel.svg" alt="HTML" />
-              <p class="font-semibold1 mt-5 text-center text-white">Laravel</p>
-            </a>
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/react-2.svg" alt="HTML" />
-              <p class="font-semibold1 mt-5 text-center text-white">ReactJS</p>
-            </a>  
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/mysql.svg" alt="HTML" />
-              <p class="font-semibold1 mt-5 text-center text-white">MySQL Database</p>
-            </a>  
-            <a
-              href="#"
-              class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8"
-            >
-              <img src="dist/img/Clients/postgre.svg" alt="HTML" class="w-48"/>
-              <p class="font-semibold1 mt-5 text-center text-white">PostgreeSQL Database</p>
-            </a>  
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Clients Section Ends -->
-
-    <!-- Blog Section Start -->
-    <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
-      <div class="container">
-        <div class="mb-10 w-full px-4">
-          <div class="mx-auto max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
-              Recent Post
-            </h2>
-            <p class="text-medium font-medium text-secondary md:text-lg">
-              This is my recent post about my activity
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
-            >
-              <img
-                src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/computer-coding.jpg"
-                alt="programming"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3
-                  class="mb-3 truncate text-xl font-semibold text-dark dark:text-white"
-                >
-                  Tips Learn Programming
-                </h3>
-                <p class="mb-6 text-base font-medium text-secondary">
-                  learn programming started from concepts and fundamentals.
-                  Every programming language has its syntax, and you must learn
-                  the fundamental syntax of the language.
-                </p>
-                <a
-                  href="#"
-                  class="rounded-lg bg-primary py-3 px-6 text-sm font-medium text-white hover:opacity-80"
-                  >Read More</a
-                >
-              </div>
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="https://ami.projectdev.site/" target="_blank">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/Portfolio/ami-1.PNG" alt="Landing Page" width="w-full" />
             </div>
-          </div>
-
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 "
-            >
-              <img
-                src="https://hips.hearstapps.com/hmg-prod/images/pop-mechanical-keyboards-64e4ce5645fe9.jpg"
-                alt="keyboard"
-                class="w-full h-52"
-              />
-              <div class="py-8 px-6">
-                <h3
-                  class="mb-3 truncate text-xl font-semibold text-dark dark:bg-slate-800 dark:text-white"
-                >
-                  My Keyboard
-                </h3>
-                <p class="mb-6 text-base font-medium text-secondary">
-                  The coding keyboards are different from usual keyboards as
-                  they have the least latency time, which makes it easier to
-                  type code in the system.
-                </p>
-                <a
-                  href="#"
-                  class="rounded-lg bg-primary py-3 px-6 text-sm font-medium text-white hover:opacity-80"
-                  >Read Mode</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
-            >
-              <img
-                src="https://img.okezone.com/content/2019/06/09/298/2064765/aroma-kopi-indonesia-semakin-harum-di-world-of-coffe-jerman-C8ygzWfm8s.jpg"
-                alt="coffe"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3
-                  class="mb-3 truncate text-xl font-semibold text-dark dark:text-white"
-                >
-                  Enjoy coffe
-                </h3>
-                <p class="mb-6 text-base font-medium text-secondary">
-                  there is evidence to suggest that drinking coffe has positive
-                  effects on memory, mood, and enery, all of which boost
-                  productivity.
-                </p>
-                <a
-                  href="#"
-                  class="rounded-lg bg-primary py-3 px-6 text-sm font-medium text-white hover:opacity-80"
-                  >Read more</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Blog Section End -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
-              Contact Us
-            </h2>
-            <p class="text-medium font-medium text-secondary md:text-lg">
-              For all inquiries, please email us using the form bellow
-            </p>
-          </div>
-        </div>
-
-        <form action="">
-          <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="mb-8 w-full px-4">
-              <label
-                for="name"
-                class="text-base font-bold uppercase text-primary"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              />
-            </div>
-            <div class="mb-8 w-full px-4">
-              <label
-                for="email"
-                class="text-base font-bold uppercase text-primary"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              />
-            </div>
-            <div class="mb-8 w-full px-4">
-              <label
-                for="pesan"
-                class="text-base font-bold uppercase text-primary"
-                >Massage</label
-              >
-              <textarea
-                type="text"
-                id="pesan"
-                class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              ></textarea>
-            </div>
-            <div class="w-full px-4">
-              <button
-                class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-12">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-white">Dav's Corp</h2>
-          </div>
-
-          <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">
-              Writing Category
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+              SIM-AMI - App |
+              Status : Active
             </h3>
-            <ul class="text-slate-300">
-              <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Programming</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Technology</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Lifestyle</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >productivity
-              </li>
-            </ul>
-          </div>
-
-          <div class="mb-10 w-full px-4 md:w-1/3">
-            <h3 class=" text-xl font-semibold text-white">Link</h3>
-            <ul class="text-slate-300">
-              <li>
-                <a
-                  href="#home"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Dashboard</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#portfolio"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >About Me</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#clients"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Portofolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Skill</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+            <p class="text-base font-medium text-secondary">
+              The Internal Quality Audit Information System (SIM-AMI) is a platform developed to streamline the internal quality audit process in higher education institutions, 
+              specifically implemented in Politeknik Elektronika Negeri Surabaya.
+               It addresses challenges in manual monitoring, spreadsheet-based data management, and inefficiencies in report generation. 
+               The system adheres to Ministerial Regulation No. 53 of 2023 and focuses on auditing performance indicators (IKUK) while improving data management and ensuring compliance with regulations.
+            </p>
+          </a>
         </div>
 
-        <div class="w-full border-t border-slate-700 pt-10">
-          <div class="mb-5 flex items-center justify-center">
-            <!-- Youtube -->
-            <a
-              href="https://www.youtube.com/@davidaryasetia8745"
-              target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                class="fill-current"
-                width="20"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>YouTube</title>
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                />
-              </svg>
-            </a>
+        <div class="mb-12 p-4 md:w-1/2">
+          <a href="https://projectdev.site/" target="_blank">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/Portfolio/David-Server.PNG" alt="Landing Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+              Cloud Infrastructure for Dynamic Project Hosting |
+              Status : Active
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              This project showcases experience in managing and deploying a web server infrastructure on a free Oracle Cloud VPS.
+               The server hosts multiple web projects using Nginx as the web server MySQL,PostgreeSQL for database management, Netdata for real-time performance monitoring, and Gunicorn as the application server engine for Django-based applications. 
+               Leveraging Oracle's cloud services, this setup provides a scalable and efficient environment, ideal for supporting various online projects with real-time monitoring, and optimized performance.
+            </p>
+          </a>
+        </div>
 
-            <!-- Linkedin -->
-            <a
-              href="https://www.linkedin.com/in/david-aryasetia-febrian-susanto-ab5a22172/"
-              target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                class="fill-current"
-                width="20"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>LinkedIn</title>
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                />
-              </svg>
-            </a>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section End -->
 
-            <!-- Instagram -->
-            <a
-              href="https://www.instagram.com/david_aryasetia/"
-              target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                class="fill-current"
-                width="20"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Instagram</title>
-                <path
-                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                />
-              </svg>
-            </a>
-
-            <!-- Twitter -->
-            <a
-              href="https://twitter.com/david_aryasetia"
-              target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                class="fill-current"
-                width="20"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Twitter</title>
-                <path
-                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                />
-              </svg>
-            </a>
-
-           
-          </div>
-
-          <p class="text-center text-xs font-medium text-slate-500">
-            Made with
-            <span target="_blank" class="text-pink-500"> ❤ </span> By
-            <a
-              href="https://www.instagram.com/david_aryasetia/"
-              target="_blank"
-              class="font-bold text-primary"
-            >
-              David Aryasetia </a
-            >, use
-            <a
-              href="https://tailwindcss.com"
-              target="_blank"
-              class="font-bold text-sky-500"
-            >
-              Tailwind CSS
-            </a>
+  <!-- Clients Section Start -->
+  <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-400">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary">Skill</h4>
+          <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">
+            Ability Possesed
+          </h2>
+          <p class="text-medium font-medium text-secondary md:text-lg">
+            Strong concepts, including an understanding of HTML, CSS ,
+            JavaScript, and other framework like reactJS, laravel, tailwindCSS
           </p>
         </div>
       </div>
-    </footer>
-    <!-- Footer End -->
 
-    <!-- Back To Top Start -->
-    <a
-      href="#home"
-      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
-      id="to-top"
-    >
-      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
-    </a>
-    <!-- Back To Top End -->
+      <div class="w-full px-4">
+        <div class="flex flex-wrap items-center justify-center">
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/html-1.svg" alt="HTML" />
+            <p class="font-semibold1 mt-5 text-center text-white">HTML</p>
+          </a>
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/css-3.svg" alt="HTML" />
+            <p class="font-semibold1 mt-5 text-center text-white">CSS</p>
+          </a>
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/javascript-1.svg" alt="HTML" />
+            <p class="font-semibold1 mt-5 text-center text-white">
+              JavaScript
+            </p>
+          </a>
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/laravel.svg" alt="HTML" />
+            <p class="font-semibold1 mt-5 text-center text-white">Laravel</p>
+          </a>
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/react-2.svg" alt="HTML" />
+            <p class="font-semibold1 mt-5 text-center text-white">ReactJS</p>
+          </a>
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/mysql.svg" alt="HTML" />
+            <p class="font-semibold1 mt-5 text-center text-white">MySQL Database</p>
+          </a>
+          <a href="#"
+            class="mx-4 max-w-[120px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            <img src="dist/img/Clients/postgre.svg" alt="HTML" class="w-48" />
+            <p class="font-semibold1 mt-5 text-center text-white">PostgreeSQL Database</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Clients Section Ends -->
 
-    <script src="dist/js/script.js"></script>
-  </body>
+  <!-- Blog Section Start -->
+  <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+    <div class="container">
+      <div class="mb-10 w-full px-4">
+        <div class="mx-auto max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
+          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+            Recent Post
+          </h2>
+          <p class="text-medium font-medium text-secondary md:text-lg">
+            This is my recent post about my activity
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+            <img
+              src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/computer-coding.jpg"
+              alt="programming" class="w-full" />
+            <div class="py-8 px-6">
+              <h3 class="mb-3 truncate text-xl font-semibold text-dark dark:text-white">
+                Tips Learn Programming
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary">
+                learn programming started from concepts and fundamentals.
+                Every programming language has its syntax, and you must learn
+                the fundamental syntax of the language.
+              </p>
+              <a href="#" class="rounded-lg bg-primary py-3 px-6 text-sm font-medium text-white hover:opacity-80">Read
+                More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 ">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/pop-mechanical-keyboards-64e4ce5645fe9.jpg"
+              alt="keyboard" class="w-full h-52" />
+            <div class="py-8 px-6">
+              <h3 class="mb-3 truncate text-xl font-semibold text-dark dark:bg-slate-800 dark:text-white">
+                My Keyboard
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary">
+                The coding keyboards are different from usual keyboards as
+                they have the least latency time, which makes it easier to
+                type code in the system.
+              </p>
+              <a href="#" class="rounded-lg bg-primary py-3 px-6 text-sm font-medium text-white hover:opacity-80">Read
+                Mode</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+            <img
+              src="https://img.okezone.com/content/2019/06/09/298/2064765/aroma-kopi-indonesia-semakin-harum-di-world-of-coffe-jerman-C8ygzWfm8s.jpg"
+              alt="coffe" class="w-full" />
+            <div class="py-8 px-6">
+              <h3 class="mb-3 truncate text-xl font-semibold text-dark dark:text-white">
+                Enjoy coffe
+              </h3>
+              <p class="mb-6 text-base font-medium text-secondary">
+                there is evidence to suggest that drinking coffe has positive
+                effects on memory, mood, and enery, all of which boost
+                productivity.
+              </p>
+              <a href="#" class="rounded-lg bg-primary py-3 px-6 text-sm font-medium text-white hover:opacity-80">Read
+                more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto max-w-xl text-center">
+          <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+            Contact Us
+          </h2>
+          <p class="text-medium font-medium text-secondary md:text-lg">
+            For all inquiries, please email us using the form bellow
+          </p>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="w-full lg:mx-auto lg:w-2/3">
+          <div class="mb-8 w-full px-4">
+            <label for="name" class="text-base font-bold uppercase text-primary">Name</label>
+            <input type="text" id="name"
+              class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+          <div class="mb-8 w-full px-4">
+            <label for="email" class="text-base font-bold uppercase text-primary">Email</label>
+            <input type="email" id="email"
+              class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+          <div class="mb-8 w-full px-4">
+            <label for="pesan" class="text-base font-bold uppercase text-primary">Massage</label>
+            <textarea type="text" id="pesan"
+              class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+          </div>
+          <div class="w-full px-4">
+            <button
+              class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
+              Send
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer Start -->
+  <footer class="bg-dark pt-24 pb-12">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+          <h2 class="mb-5 text-4xl font-bold text-white">Dav's Corp</h2>
+        </div>
+
+        <div class="mb-12 w-full px-4 md:w-1/3">
+          <h3 class="mb-5 text-xl font-semibold text-white">
+            Writing Category
+          </h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="#" class="mb-3 inline-block text-base hover:text-primary">Programming</a>
+            </li>
+            <li>
+              <a href="#" class="mb-3 inline-block text-base hover:text-primary">Technology</a>
+            </li>
+            <li>
+              <a href="#" class="mb-3 inline-block text-base hover:text-primary">Lifestyle</a>
+            </li>
+            <li>
+              <a href="#" class="mb-3 inline-block text-base hover:text-primary">productivity
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-10 w-full px-4 md:w-1/3">
+          <h3 class=" text-xl font-semibold text-white">Link</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Dashboard</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">About Me</a>
+            </li>
+            <li>
+              <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Portofolio</a>
+            </li>
+            <li>
+              <a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Skill</a>
+            </li>
+            <li>
+              <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
+            </li>
+            <li>
+              <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full border-t border-slate-700 pt-10">
+        <div class="mb-5 flex items-center justify-center">
+          <!-- Youtube -->
+          <a href="https://www.youtube.com/@davidaryasetia8745" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>YouTube</title>
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+
+          <!-- Linkedin -->
+          <a href="https://www.linkedin.com/in/david-aryasetia-febrian-susanto-ab5a22172/" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>LinkedIn</title>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/david_aryasetia/" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
+
+          <!-- Twitter -->
+          <a href="https://twitter.com/david_aryasetia" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Twitter</title>
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            </svg>
+          </a>
+
+
+        </div>
+
+        <p class="text-center text-xs font-medium text-slate-500">
+          Made with
+          <span target="_blank" class="text-pink-500"> ❤ </span> By
+          <a href="https://www.instagram.com/david_aryasetia/" target="_blank" class="font-bold text-primary">
+            David Aryasetia </a>, use
+          <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">
+            Tailwind CSS
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Back To Top Start -->
+  <a href="#home"
+    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+    id="to-top">
+    <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+  </a>
+  <!-- Back To Top End -->
+
+  <script src="dist/js/script.js"></script>
+</body>
+
 </html>
