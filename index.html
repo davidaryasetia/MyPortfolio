@@ -17,6 +17,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYVEBGE6PE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -37,62 +38,61 @@
 
 <body>
   <!-- Header Start -->
-  <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-    <div class="container">
-      <div class="relative flex items-center justify-between">
-        <div class="px-4">
-          <a href="#home" class="block py-6 text-lg font-bold text-primary">David Aryasetia</a>
-        </div>
-        <div class="flex items-center px-4">
-          <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-            <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-            <span class="hamburger-line transition duration-300 ease-in-out"></span>
-            <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-          </button>
+  <header
+    class="fixed top-0 left-0 z-20 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm transition-color dark:bg-dark">
+    <div class="container flex items-center justify-between">
+      <div class="px-4">
+        <a href="#home" class="block py-6 text-lg font-bold text-primary">David Aryasetia</a>
+      </div>
+      <div class="flex items-center px-4">
+        <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+          <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+        </button>
 
-          <nav id="nav-menu"
-            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
-            <ul class="block lg:flex">
-              <li class="group">
-                <a href="#home"
-                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Dashboard</a>
-              </li>
-              <li class="group">
-                <a href="#about"
-                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About Me</a>
-              </li>
-              <li class="group">
-                <a href="#portfolio"
-                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
-              </li>
-              <li class="group">
-                <a href="#clients"
-                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Skill</a>
-              </li>
-              <li class="group">
-                <a href="#blog"
-                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
-              </li>
-              <li class="group">
-                <a href="#contact"
-                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
-              </li>
-              <li class="mt-3 flex items-center pl-8 lg:mt-0">
-                <div class="flex">
-                  <span class="mr-2 text-sm text-slate-500">light</span>
-                  <input type="checkbox" class="hidden" id="dark-toggle" />
-                  <label for="dark-toggle">
-                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
-                      </div>
+        <nav id="nav-menu"
+          class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+          <ul class="block lg:flex">
+            <li class="group">
+              <a href="#home"
+                class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Dashboard</a>
+            </li>
+            <li class="group">
+              <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About
+                Me</a>
+            </li>
+            <li class="group">
+              <a href="#portfolio"
+                class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+            </li>
+            <li class="group">
+              <a href="#clients"
+                class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Skill</a>
+            </li>
+            <li class="group">
+              <a href="#blog"
+                class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+            </li>
+            <li class="group">
+              <a href="#contact"
+                class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+            </li>
+            <li class="mt-3 flex items-center pl-8 lg:mt-0">
+              <div class="flex">
+                <span class="mr-2 text-sm text-slate-500">light</span>
+                <input type="checkbox" class="hidden" id="dark-toggle" />
+                <label for="dark-toggle">
+                  <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
                     </div>
-                  </label>
-                  <span class="ml-2 text-sm text-slate-500">dark</span>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
+                  </div>
+                </label>
+                <span class="ml-2 text-sm text-slate-500">dark</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -116,7 +116,8 @@
             </span>
           </h2>
           <p class="mb-10 font-medium leading-relaxed text-secondary text-sm md:text-base lg:text-base">
-            <span class="block">Passionate About Backend Development | Database Administration and Database Engineer | SQL Developer<br></span>
+            <span class="block">Passionate About Backend Development | Database Administration and Database Engineer |
+              SQL Developer<br></span>
             <span class="block">Microservices Architecture | Cloud Server Administration | OOP Principle</span>
           </p>
           <a href="https://wa.me/082232668794"
@@ -153,10 +154,9 @@
               <span class="font-semibold text-primary">Database Administrator</span> with hands-on experience in
               designing and managing scalable backend systems.
               I specialize in
-               <span class="font-semibold text-primary">Laravel</span>, 
-               <span class="font-semibold text-primary">Python Framework (Flask, Django)</span>, 
-              <span
-                class="font-semibold text-primary">RESTful APIs</span>, and database
+              <span class="font-semibold text-primary">Laravel</span>,
+              <span class="font-semibold text-primary">Python Framework (Flask, Django)</span>,
+              <span class="font-semibold text-primary">RESTful APIs</span>, and database
               management using <span class="font-semibold text-primary">MySQL</span>, <span
                 class="font-semibold text-primary">PostgreSQL</span>, and <span
                 class="font-semibold text-primary">Oracle</span>.
@@ -165,7 +165,8 @@
             <p class="text-gray-800 font-semibold mb-2">My expertise includes:</p>
             <ul class="list-disc pl-5 space-y-2 text-gray-600">
               <li class="hover:text-primary transition-colors duration-200">
-                <strong>Backend Development with PHP, Python, Javascript, Laravel, Flask-Restx, Django, using Object-Oriented Programming (OOP)</strong>
+                <strong>Backend Development with PHP, Python, Javascript, Laravel, Flask-Restx, Django, using
+                  Object-Oriented Programming (OOP)</strong>
               </li>
               <li class="hover:text-primary transition-colors duration-200">
                 <strong>Rest API & Microservices Architecture</strong>
@@ -177,11 +178,12 @@
                 <strong>PL/SQL Programming & Query Optimization</strong>
               </li>
               <li class="hover:text-primary transition-colors duration-200">
-                <strong>Cloud Infrastructure Deployment</strong> using <strong>Oracle Cloud</strong>, 
-                <strong>Nginx, PM2, Gunicorn</strong>
+                <strong>Cloud Infrastructure Deployment</strong> using <strong>Oracle Cloud</strong>,
+                <strong>Nginx, PM2, Gunicorn, NetData, CI/CD(Jenkins), Portainer, Docker, SSL (Let's Enscrypt)</strong>
               </li>
               <li class="hover:text-primary transition-colors duration-200">
-                <strong>Design System</strong> using <strong>UML, Sequence Diagram, Flow Chart, and Use case Diagram</strong> 
+                <strong>Design System</strong> using <strong>UML, Sequence Diagram, Flow Chart, and Use case
+                  Diagram</strong>
               </li>
             </ul>
 
@@ -197,8 +199,9 @@
         <div class="mb-10 w-full px-4 lg:w-1/2">
           <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
             <h4 class="mb-4 text-2xl font-extrabold text-primary flex items-center">
-              📞  <span
-                class="ml-2 text-gradient bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Let's Connect</span>
+              📞 <span
+                class="ml-2 text-gradient bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">Let's
+                Connect</span>
             </h4>
             <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
               I’m open to exciting opportunities in Backend Development, Database Administration, and Cloud
@@ -282,7 +285,7 @@
 
             <p class="text-base font-medium text-secondary">
               vixmo is a company profile website containing products developed
-              by the company, and the team
+              by the company, and the team about the Electric Vehicle (EV).
             </p>
           </a>
         </div>
@@ -312,11 +315,16 @@
               Status : Active
             </h3>
             <p class="text-base font-medium text-secondary">
-              This project focuses on the development of a mobile web application aimed at recognizing and promoting Lombok Island's unique gastronomic heritage. Utilizing a Deep Learning model with Siamese Neural Network architecture, users can easily capture images of traditional Lombok dishes through their smartphone or photo gallery. These images are sent to a server where they are identified using a pre-trained model. The application then provides detailed gastronomic information about the recognized dish, including historical and cultural insights.
+              This project focuses on the development of a mobile web application aimed at recognizing and promoting
+              Lombok Island's unique gastronomic heritage. Utilizing a Deep Learning model with Siamese Neural Network
+              architecture, users can easily capture images of traditional Lombok dishes through their smartphone or
+              photo gallery. These images are sent to a server where they are identified using a pre-trained model. The
+              application then provides detailed gastronomic information about the recognized dish, including historical
+              and cultural insights.
             </p>
           </a>
         </div>
-        
+
         <div class="mb-6 md:mb-12 lg:mb-12 p-4 md:w-1/2">
           <a href="https://lombokapp.projectsdev.site/" target="_blank">
             <div class="overflow-hidden rounded-md shadow-md">
@@ -327,17 +335,21 @@
               Status : Active
             </h3>
             <p class="text-base font-medium text-secondary">
-              This project focuses on the development of the Gastronomi Backend & Admin App, a robust backend system built with Laravel and powered by a PostgreeSQL database. 
-              It is designed to support the gastronomic food recognition platform on Lombok Island, offering seamless integration with the frontend via RESTful APIs. 
-              This system allows for efficient data communication between the mobile frontend and backend server, ensuring that users can explore Lombok's rich culinary heritage.
+              This project focuses on the development of the Gastronomi Backend & Admin App, a robust backend system
+              built with Laravel and powered by a PostgreeSQL database.
+              It is designed to support the gastronomic food recognition platform on Lombok Island, offering seamless
+              integration with the frontend via RESTful APIs.
+              This system allows for efficient data communication between the mobile frontend and backend server,
+              ensuring that users can explore Lombok's rich culinary heritage.
             </p>
           </a>
         </div>
 
         <div class="mb-6 md:mb-12 lg:mb-12 p-4 md:w-1/2">
           <a href="" target="">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/Portfolio/SIAPT.png" alt="Landing Page" width="w-full" class=" h-64 w-full" />
+            <div class="overflow-hidden rounded-md shadow-md bg-transparent flex items-center justify-center">
+              <img src="dist/img/Portfolio/SIAPT.png" alt="Landing Page" width="w-full"
+                class=" max-h-64 w-full object-contain" />
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
               SIAPT |
@@ -386,10 +398,13 @@
               Status : Active
             </h3>
             <p class="text-base font-medium text-secondary">
-              The Internal Quality Audit Information System (SIM-AMI) is a platform developed to streamline the internal quality audit process in higher education institutions, 
+              The Internal Quality Audit Information System (SIM-AMI) is a platform developed to streamline the internal
+              quality audit process in higher education institutions,
               specifically implemented in Politeknik Elektronika Negeri Surabaya.
-               It addresses challenges in manual monitoring, spreadsheet-based data management, and inefficiencies in report generation. 
-               The system adheres to Ministerial Regulation No. 53 of 2023 and focuses on auditing performance indicators (IKUK) while improving data management and ensuring compliance with regulations.
+              It addresses challenges in manual monitoring, spreadsheet-based data management, and inefficiencies in
+              report generation.
+              The system adheres to Ministerial Regulation No. 53 of 2023 and focuses on auditing performance indicators
+              (IKUK) while improving data management and ensuring compliance with regulations.
             </p>
           </a>
         </div>
@@ -404,9 +419,13 @@
               Status : Active
             </h3>
             <p class="text-base font-medium text-secondary">
-              This project showcases experience in managing and deploying a web server infrastructure on a free Oracle Cloud VPS.
-               The server hosts multiple web projects using Nginx as the web server MySQL,PostgreeSQL for database management, Netdata for real-time performance monitoring, and Gunicorn as the application server engine for Django-based applications. 
-               Leveraging Oracle's cloud services, this setup provides a scalable and efficient environment, ideal for supporting various online projects with real-time monitoring, and optimized performance.
+              This project showcases experience in managing and deploying a web server infrastructure on a free Oracle
+              Cloud VPS.
+              The server hosts multiple web projects using Nginx as the web server MySQL,PostgreeSQL for database
+              management, Netdata for real-time performance monitoring, and Gunicorn as the application server engine
+              for Django-based applications.
+              Leveraging Oracle's cloud services, this setup provides a scalable and efficient environment, ideal for
+              supporting various online projects with real-time monitoring, and optimized performance.
             </p>
           </a>
         </div>
@@ -425,9 +444,10 @@
           <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">
             Ability Possesed
           </h2>
-          <p class="text-medium font-medium text-secondary md:text-lg">
-            Strong concepts, andincluding an understanding of HTML, CSS ,
-            JavaScript, and other framework like reactJS, laravel, Flask-Restx, Django, tailwindCSS
+          <p class="text-medium font-medium text-slate-300 md:text-lg">
+            Strong concepts in Object-Oriented Programming (OOP), HTML, CSS, and JavaScript, with hands-on experience in
+            frameworks such as React.js, Laravel, Flask-RESTX, Django, and Tailwind CSS. Also experienced in cloud
+            infrastructure and server deployment using Nginx,Gunicorn, Docker, and PM2.
           </p>
         </div>
       </div>
@@ -435,53 +455,53 @@
       <div class="w-full px-4">
         <div class="flex flex-wrap items-center justify-center">
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/html-1.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">HTML</p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/css-3.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">CSS</p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/javascript-1.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">
               JavaScript
             </p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/python.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">
               Python
             </p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/flask-restx.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">
               Flask-RestX
             </p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/laravel.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">Laravel</p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/react-2.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">ReactJS</p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/mysql.svg" alt="HTML" />
             <p class="font-semibold1 mt-5 text-center text-white">MySQL Database</p>
           </a>
           <a href="#"
-            class="mx-4 max-w-[90px] py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
+            class="mx-4 max-w-[64px] md:max-w-[90px] lg:max-w-[90px] py-4 md:py-10 lg:py-10 opacity-60 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-5 xl:mx-8">
             <img src="dist/img/Clients/postgre.svg" alt="HTML" class="w-48" />
             <p class="font-semibold1 mt-5 text-center text-white">PostgreeSQL Database</p>
           </a>
@@ -615,12 +635,12 @@
   <!-- Contact Section End -->
 
   <!-- Footer Start -->
-  <footer class="bg-dark pt-24 pb-12">
+  <footer class="bg-dark pt-16 md:pt-20 lg:pt-20 pb-12 md:pb-20 lg:pb-16">
     <div class="container">
       <div class="flex flex-wrap">
         <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-          <h2 class="mb-5 text-4xl font-bold text-white">David Aryasetia</h2>
-          <h2 class="mb-5 text-2xl text-white">Mojokerto City, East Java</h2>
+          <h2 class="mb-4 md:mb-4 lg:mb-4 text-2xl md:text-4xl lg:text-4xl font-bold text-white">David Aryasetia</h2>
+          <h2 class="mb-4 md:mb-4 lg:mb-4 text-lg text-white">Mojokerto City, East Java</h2>
         </div>
 
         <div class="mb-12 w-full px-4 md:w-1/3">
